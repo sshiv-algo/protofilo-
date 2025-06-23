@@ -93,18 +93,19 @@ section h1, section h2 {
 
 /* === HERO SECTION === */
 #home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;   /* Align content to left */
-  padding-left: 2%;         /* Space from left edge */
-  height: 100vh;             /* Full screen height */
-  color:#fab95b;    /*preffesion*/
-  background: url('images/homedp2.jpg') no-repeat center center;
+  background: url('asset/homedp2.jpg') no-repeat center center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
 }
+
+@media (max-width: 768px) {
+  #home {
+    background-position: top center; 
+  }
+}
+
 
 /* Overlay to darken background for readability */
 #home::before {
